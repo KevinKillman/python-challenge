@@ -20,8 +20,8 @@ with open(out_path, 'w') as out_file:
         if candidates[c] > win_votes:
             win_votes = candidates[c]
             winner = c
-        print(f"{c}: {round((candidates[c]/total)*100, 4)} ({str(candidates[c])})")
-        out_file.write(f"{c}: {round((candidates[c]/total)*100, 3)} ({str(candidates[c])})\n")
+        print(f"{c}: {round((candidates[c]/total)*100, 4)}% ({str(candidates[c])})")
+        out_file.write(f"{c}: {round((candidates[c]/total)*100, 3)}% ({str(candidates[c])})\n")
     print(f"Winner: {winner}")
-    out_file.append(f"Win)
+    
         
