@@ -27,7 +27,7 @@ with open(csvpath, 'r') as file:
         prev_pl = int(row[1])
         
         
-    avg_pl = avg_change_total/(num_months-1)
+    avg_pl = round(avg_change_total/(num_months-1), 2)
     print("Total Months: " + str(num_months))
     print("Total: " + str(total_pl))
     print('Average Change: ' + str(avg_pl))
